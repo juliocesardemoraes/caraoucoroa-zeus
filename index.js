@@ -11,27 +11,27 @@ function getRandomInt(max) {
 function lancarmoeda(choice) {
   const rolagem = getRandomInt(2);
   const caraoucoroa = rolagem === 0 ? "cara" : "coroa";
+  console.log(caraoucoroa);
 
-  console.log("scoreTags", scoreTags[0]);
-
-  if (choice === caraoucoroa) {
-    score += 10;
-    console.log("CARAAAA");
-
+  if (caraoucoroa === "cara") {
+    // CARA
     if (state != "cara") {
       moedaImg.style.transform = "rotateY(0deg)";
       state = "cara";
-      alert("VOCÊ ACERTOU!");
     }
   } else {
-    score -= 10;
-    console.log("coroaaaa");
-    alert("VOCÊ ERROU!");
+    // COROA
 
     if (state != "coroa") {
       moedaImg.style.transform = "rotateY(180deg)";
       state = "coroa";
     }
+  }
+
+  if (choice === caraoucoroa) {
+    score += 10;
+  } else {
+    score -= 10;
   }
 
   if (score >= 0) {
