@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculadora de gorjetas</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="rotate.css" />
+  </head>
+  <body class="flex flex-col">
+    <main>
+      <h1 class="mb-1">Cara ou coroa</h1>
+      <span class="block mb-8"
+        >Jogue a moeda para ver qual o resultado(cara ou coroa)</span
+      >
+
+      <div class="mb-8 flex justify-center card__container">
+        <img id="coin__image" class="card__front" src="/public/cara.png" />
+        <img id="coin__image" class="card__back" src="/public/coroa.png" />
+      </div>
+
+      <div class="flex gap-4 justify-center mb-4">
+        <button class="button-primary sm-rounded" onclick="lancarmoeda('cara')">
+          Cara
+        </button>
+        <button
+          class="button-secundary sm-rounded"
+          onclick="lancarmoeda('coroa')"
+        >
+          Coroa
+        </button>
+      </div>
+
+      <div class="answer__container rounded p-8 background-gray score">
+        <p class="text-center mb-1"><b>SCORE</b></p>
+        <p class="text-center">
+          Para cada acerto <b>+10</b>, cada erro <b>-10</b>
+        </p>
+        <h1 class="text-center score">0</h1>
+      </div>
+    </main>
+
+    <script src="index.js"></script>
+  </body>
+</html>

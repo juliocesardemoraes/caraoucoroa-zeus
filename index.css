@@ -1,0 +1,159 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "Inter", sans-serif;
+    box-sizing: border-box;
+}
+
+
+body{
+    width: 100%;
+    background: #232323;
+    min-height: 100vh;
+}
+
+main{
+    max-width: 1024px;
+    margin:auto;
+    color: #fff;
+}
+
+
+button{
+    padding: 0.875rem 3rem;
+    font-weight: 700;
+    text-align: center;
+    color: #fff;
+    background: none;
+    border:none;
+    opacity:0.85;
+    transition: 1s opacity;
+}
+
+button:hover{
+    opacity: 1;
+    cursor: pointer;
+    transition: 1s opacity;
+}
+
+.button-primary{
+    background: #1C7ED6;
+}
+
+.button-secundary{
+    background: #DC3545;
+}
+
+.text-blue{
+    color: #1C7ED6;
+}
+
+.text-red{
+    color: #DC3545;
+}
+
+.border-red{
+    border: 3px solid #DC3545;
+}
+
+.border-blue{
+    border: 3px solid #1C7ED6;
+}
+
+.background-gray{
+    background: #2E2E2E;
+}
+
+h1{
+    font-size: 4rem;
+    font-weight: bold;
+}
+
+h2{
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+p,span{
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.mb-1{
+    margin-bottom: 0.5rem;
+}
+
+.mb-4{
+    margin-bottom: 2rem;
+}
+
+.mb-8{
+    margin-bottom: 4rem;
+}
+
+.p-1{
+    padding: 0.5rem;
+}
+
+.p-2{
+    padding: 1rem;
+}
+
+.p-4{
+    padding:2rem;
+}
+
+.p-8{
+    padding: 4rem;
+}
+
+.gap-4{
+    gap: 2rem;
+}
+
+.block{
+    display: block;
+}
+
+.flex{
+    display: flex;
+}
+
+.flex-col{
+    flex-direction: column;
+}
+
+.flex-around{
+    justify-content: space-around;
+}
+
+.justify-center{
+    justify-content: center;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.rounded{
+    border-radius: 1rem;
+}
+
+.sm-rounded{
+    border-radius: 0.25rem;
+}
+
+
+
+
+
+/*
+#232323
+#2E2E2E
+
+#FFF
+#CCC
+
+#1C7ED6
+#DC3545
+*/
