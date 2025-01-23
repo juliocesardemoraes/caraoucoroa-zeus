@@ -1,8 +1,7 @@
 const scoreTags = document.getElementsByClassName("score");
-const moedaImg = document.getElementsByClassName("card__container")[0];
+const moedaImg = document.getElementById("coin__image");
 
 let score = 0;
-let state = "cara";
 
 function getRandomInt(max) {
   return Math.floor(Math.random() * max);
@@ -16,22 +15,11 @@ function lancarmoeda(choice) {
 
   if (choice === caraoucoroa) {
     score += 10;
-    console.log("CARAAAA");
 
-    if (state != "cara") {
-      moedaImg.style.transform = "rotateY(0deg)";
-      state = "cara";
-      alert("VOCÊ ACERTOU!");
-    }
+    moedaImg.src = "/public/cara.png";
   } else {
     score -= 10;
-    console.log("coroaaaa");
-    alert("VOCÊ ERROU!");
-
-    if (state != "coroa") {
-      moedaImg.style.transform = "rotateY(180deg)";
-      state = "coroa";
-    }
+    moedaImg.src = "/public/coroa.png";
   }
 
   if (score >= 0) {
