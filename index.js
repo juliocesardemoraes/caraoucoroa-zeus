@@ -11,15 +11,16 @@ function lancarmoeda(choice) {
   const rolagem = getRandomInt(2);
   const caraoucoroa = rolagem === 0 ? "cara" : "coroa";
 
-  console.log("scoreTags", scoreTags[0]);
+  if (caraoucoroa === "cara") {
+    moedaImg.src = "/public/cara.png";
+  } else {
+    moedaImg.src = "/public/coroa.png";
+  }
 
   if (choice === caraoucoroa) {
     score += 10;
-
-    moedaImg.src = "/public/cara.png";
   } else {
     score -= 10;
-    moedaImg.src = "/public/coroa.png";
   }
 
   if (score >= 0) {
