@@ -1,1 +1,1 @@
-# Tip Calculator
+# Cara ou Coroa
